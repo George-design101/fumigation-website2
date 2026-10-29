@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reliable fumigation and pest control for homes, offices and businesses. Request a free inspection and quote.">
+  <title>ShieldGuard Fumigation | Pest Control You Can Trust</title>
+  <style>
+    :root{--green:#143d2b;--green2:#1d6846;--lime:#c7f36b;--ink:#17231d;--muted:#64736a;--cream:#f6f8f2;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--green);color:#eaf5ec;font-size:.87rem;padding:9px 0}
+    .topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e8eee8}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:1.18rem;letter-spacing:-.04em}
+    .brand-mark{width:42px;height:42px;border-radius:13px;background:var(--green);display:grid;place-items:center;color:var(--lime);font-size:1.45rem}
+    .brand small{display:block;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:750;margin-top:-3px}
+    .navlinks{display:flex;align-items:center;gap:28px;font-weight:650;font-size:.94rem}
+    .navlinks a:hover{color:var(--green2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:999px;font-weight:800;border:0;cursor:pointer;transition:.2s}
+    .btn-primary{background:var(--lime);color:#18321e}
+    .btn-primary:hover{background:#b8e958;transform:translateY(-2px)}
+    .btn-dark{background:var(--green);color:white}
+    .btn-dark:hover{background:var(--green2);transform:translateY(-2px)}
+    .menu-toggle{display:none;border:0;background:transparent;font-size:1.6rem;cursor:pointer;color:var(--green)}
+    .hero{background:var(--cream);overflow:hidden;position:relative}
+    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:50px;padding:76px 0 82px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;background:#e7f2dd;color:var(--green);padding:8px 13px;border-radius:99px;font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+    .dot{width:7px;height:7px;border-radius:50%;background:#4b9b57}
+    h1{font-size:clamp(2.65rem,5vw,4.65rem);line-height:1.04;letter-spacing:-.065em;margin:22px 0}
+    h1 span{color:var(--green2)}
+    .hero p{font-size:1.08rem;color:var(--muted);max-width:540px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin:29px 0 30px}
+    .trust{display:flex;align-items:center;gap:13px;color:var(--muted);font-size:.9rem}
+    .avatars{display:flex}
+    .avatars span{display:grid;place-items:center;width:31px;height:31px;border:2px solid var(--cream);border-radius:50%;margin-left:-7px;background:#d8e8c9;font-size:.78rem}
+    .avatars span:first-child{margin-left:0}
+    .hero-art{position:relative;min-height:450px;display:grid;place-items:center}
+    .art-bg{position:absolute;inset:10px 0 0 20px;border-radius:45% 45% 22px 22px;background:linear-gradient(140deg,#d9edc9,#a9d2a6);transform:rotate(2deg)}
+    .art-image{position:relative;width:100%;height:420px;object-fit:cover;border-radius:45% 45% 22px 22px;box-shadow:0 25px 55px #153d2b24}
+    .floating-card{position:absolute;left:-18px;bottom:34px;background:#fff;border-radius:18px;padding:17px 20px;box-shadow:0 15px 45px #163d2b20;display:flex;align-items:center;gap:12px}
+    .floating-icon{width:44px;height:44px;border-radius:13px;background:#eff8e7;display:grid;place-items:center;font-size:1.4rem}
+    .floating-card strong{display:block;font-size:1.05rem}
+    .floating-card small{color:var(--muted)}
+    .stats{background:var(--green);color:#fff}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:27px 0;gap:18px}
+    .stat{display:flex;align-items:center;justify-content:center;gap:13px;border-right:1px solid #ffffff30}
+    .stat:last-child{border:0}
+    .stat strong{font-size:1.55rem;color:var(--lime)}
+    .stat span{font-size:.9rem;color:#e0eee3}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:650px;margin:0 auto 42px}
+    .section-head .eyebrow{margin-bottom:14px}
+    h2{font-size:clamp(2rem,3.7vw,3rem);line-height:1.12;letter-spacing:-.05em;margin-bottom:15px}
+    .section-head p{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service-card{border:1px solid #e4ebe2;border-radius:22px;padding:28px;background:#fff;transition:.25s}
+    .service-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px #183d2b10;border-color:#c9dfbf}
+    .service-icon{height:54px;width:54px;border-radius:16px;background:#edf6e7;display:grid;place-items:center;font-size:1.7rem;margin-bottom:22px}
+    .service-card h3{font-size:1.18rem;margin-bottom:9px}
+    .service-card p{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+    .learn{font-weight:800;color:var(--green2);font-size:.91rem}
+    .about{background:var(--cream)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+    .about-visual{min-height:390px;border-radius:28px;background:linear-gradient(145deg,#1b5c3e,#0e3022);padding:30px;display:flex;align-items:flex-end;position:relative;overflow:hidden;color:#fff}
+    .about-visual:before,.about-visual:after{content:"";position:absolute;border:1px solid #ffffff26;border-radius:50%;width:340px;height:340px;top:-120px;right:-70px}
+    .about-visual:after{width:230px;height:230px;top:-65px;right:-15px}
+    .shield{position:absolute;top:54px;left:50%;transform:translateX(-50%);font-size:8rem;color:var(--lime);filter:drop-shadow(0 10px 15px #0003)}
+    .about-visual-copy{position:relative;z-index:1}
+    .about-visual-copy strong{display:block;font-size:1.8rem;line-height:1.1;max-width:320px}
+    .about-visual-copy p{color:#d9e9dd;margin-top:10px}
+    .about-copy>p{color:var(--muted);margin:15px 0 24px}
+    .checks{display:grid;gap:14px;margin-bottom:28px}
+    .check{display:flex;gap:11px;align-items:flex-start;font-weight:700}
+    .check b{flex:0 0 23px;height:23px;border-radius:50%;background:#e0f1d3;color:var(--green2);display:grid;place-items:center;font-size:.8rem}
+    .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .step{padding:25px 8px}
+    .step-num{font-size:.82rem;font-weight:900;color:var(--green2);letter-spacing:.1em;margin-bottom:16px}
+    .step h3{font-size:1.18rem;margin-bottom:9px}
+    .step p{color:var(--muted);font-size:.95rem}
+    .cta{padding:0 0 82px}
+    .cta-panel{background:var(--lime);border-radius:28px;padding:48px 52px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+    .cta-panel h2{max-width:610px;margin-bottom:9px}
+    .cta-panel p{color:#39543b}
+    .cta-panel .btn{background:var(--green);color:#fff;white-space:nowrap}
+    .contact{background:var(--cream)}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px}
+    .contact-copy p{color:var(--muted);margin:12px 0 25px}
+    .contact-detail{display:flex;gap:13px;margin:20px 0;align-items:center}
+    .contact-detail .service-icon{width:44px;height:44px;margin:0;font-size:1.2rem}
+    .contact-detail small{display:block;color:var(--muted)}
+    form{background:#fff;border:1px solid #e6ece4;border-radius:23px;padding:30px;box-shadow:0 15px 40px #183d2b08}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    label{font-weight:750;font-size:.88rem;display:block;margin-bottom:7px}
+    input,select,textarea{width:100%;padding:13px 14px;border:1px solid #dce5da;border-radius:11px;font:inherit;background:#fff;color:var(--ink);outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #1d68441a}
+    .field{margin-bottom:16px}
+    .full{grid-column:1/-1}
+    textarea{resize:vertical;min-height:105px}
+    form button{width:100%;font:inherit;font-weight:800}
+    .form-note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:12px}
+    footer{background:#0e2c1f;color:#d9e8dc;padding:28px 0}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    footer .brand{color:#fff}
+    footer .brand small{color:#b7cbbd}
+    .footer-links{display:flex;gap:20px;font-size:.9rem}
+    .copyright{color:#a9c0b0;font-size:.82rem}
+    .whatsapp{position:fixed;right:20px;bottom:20px;z-index:20;background:#25d366;color:#083c20;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;font-size:1.65rem;box-shadow:0 8px 25px #0002}
+    .whatsapp:hover{transform:translateY(-3px)}
+    @media(max-width:850px){
+      .navlinks{gap:16px}.navlinks .btn{padding:11px 14px}
+      .hero-grid{gap:25px;padding:55px 0}.hero-art{min-height:370px}.art-image{height:350px}
+      .about-grid{gap:35px}.services{gap:13px}.service-card{padding:22px}
+      .cta-panel{padding:38px}
+    }
+    @media(max-width:680px){
+      .topbar .container{justify-content:center;text-align:center}
+      nav{min-height:68px}.menu-toggle{display:block}
+      .navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;padding:20px 5% 24px;box-shadow:0 16px 25px #0000000d;flex-direction:column;align-items:stretch}
+      .navlinks.open{display:flex}.navlinks a{padding:5px 0}.navlinks .btn{align-self:flex-start}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-grid{padding:47px 0 56px}.hero-art{min-height:330px;margin:5px 12px 0}.art-image{height:320px}.floating-card{left:-10px;bottom:15px}
+      h1{font-size:clamp(2.7rem,12vw,4rem)}
+      .stats-grid{grid-template-columns:1fr;padding:12px 0;gap:0}
+      .stat{justify-content:flex-start;padding:16px 6px;border-right:0;border-bottom:1px solid #ffffff30}
+      .stat:last-child{border-bottom:0}
+      section{padding:62px 0}.services,.process-grid{grid-template-columns:1fr}
+      .service-card{padding:25px}.about-visual{min-height:320px}.shield{font-size:7rem}
+      .cta{padding-bottom:62px}.cta-panel{padding:30px 25px;align-items:flex-start;flex-direction:column}
+      .form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+      form{padding:22px}.footer-row{align-items:flex-start;flex-direction:column}
+      .footer-links{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>✓ Professional pest control for homes & businesses</span><span>Serving Port Harcourt and nearby areas</span></div></div>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="ShieldGuard home"><span class="brand-mark">✳</span><span>ShieldGuard<small>Fumigation & Pest Control</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="navlinks" id="navLinks">
+        <a href="#services">Services</a><a href="#about">Why us</a><a href="#process">How it works</a><a href="#contact">Contact</a>
+        <a class="btn btn-dark" href="#contact">Get a free quote ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span> A cleaner, safer space starts here</span>
+          <h1>Take back your space from <span>unwanted pests.</span></h1>
+          <p>Reliable fumigation and pest control solutions for homes, offices, shops and commercial spaces. We help you protect what matters with a careful, professional approach.</p>
+          <div class="hero-actions"><a class="btn btn-dark" href="#contact">Request a free quote <span>↗</span></a><a class="btn btn-primary" href="#services">Explore our services</a></div>
+          <div class="trust"><div class="avatars"><span>✓</span><span>⌂</span><span>✳</span></div><span>Thoughtful service. Practical pest solutions.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Pest control professional">
+          <div class="art-bg"></div>
+          <img class="art-image" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85" alt="Professional cleaning and property care" onerror="this.style.display='none';this.parentElement.style.background='#d9edc9'">
+          <div class="floating-card"><div class="floating-icon">🛡️</div><div><strong>Protection first</strong><small>Careful, responsible service</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats"><div class="container stats-grid">
+      <div class="stat"><strong>01</strong><span>Understand your pest problem</span></div>
+      <div class="stat"><strong>02</strong><span>Recommend a tailored solution</span></div>
+      <div class="stat"><strong>03</strong><span>Help protect your space</span></div>
+    </div></div>
+
+    <section id="services"><div class="container">
+      <div class="section-head"><span class="eyebrow">What we do</span><h2>Pest control made simple.</h2><p>From everyday household pests to commercial pest management, get a solution suited to your property and situation.</p></div>
+      <div class="services">
+        <article class="service-card"><div class="service-icon">🏠</div><h3>Home Fumigation</h3><p>Practical pest treatment for houses, apartments and residential buildings, with clear preparation guidance.</p><a class="learn" href="#contact">Ask about home service ↗</a></article>
+        <article class="service-card"><div class="service-icon">🪳</div><h3>Cockroach & Ant Control</h3><p>Target common crawling insects and identify contributing conditions to help reduce repeat problems.</p><a class="learn" href="#contact">Discuss your pest issue ↗</a></article>
+        <article class="service-card"><div class="service-icon">🦟</div><h3>Mosquito Control</h3><p>Property-focused mosquito management, including advice on reducing standing water and breeding areas.</p><a class="learn" href="#contact">Request an assessment ↗</a></article>
+        <article class="service-card"><div class="service-icon">🪵</div><h3>Termite Treatment</h3><p>Assessment and treatment options for suspected termite activity in buildings and wooden structures.</p><a class="learn" href="#contact">Ask about termites ↗</a></article>
+        <article class="service-card"><div class="service-icon">🏢</div><h3>Office & Commercial</h3><p>Planned pest management for offices, shops, restaurants, warehouses and other business premises.</p><a class="learn" href="#contact">Plan business service ↗</a></article>
+        <article class="service-card"><div class="service-icon">🔍</div><h3>Pest Inspection</h3><p>Tell us what you have noticed and arrange an assessment to help determine the right next step.</p><a class="learn" href="#contact">Book an inspection ↗</a></article>
+      </div>
+    </div></section>
+
+    <section class="about" id="about"><div class="container about-grid">
+      <div class="about-visual"><div class="shield">🛡️</div><div class="about-visual-copy"><strong>Care for your space. Confidence for your day.</strong><p>Responsible pest management, with your safety in mind.</p></div></div>
+      <div class="about-copy"><span class="eyebrow">Why choose us</span><h2>A professional approach from first call to follow-up.</h2><p>Every property is different. We take time to understand the issue and explain the service, preparation steps and precautions before treatment.</p>
+        <div class="checks"><div class="check"><b>✓</b><span>Solutions matched to your pest concern</span></div><div class="check"><b>✓</b><span>Clear guidance before and after treatment</span></div><div class="check"><b>✓</b><span>Safety-conscious handling and application</span></div><div class="check"><b>✓</b><span>Service options for residential and business properties</span></div></div>
+        <a class="btn btn-dark" href="#contact">Talk to our team ↗</a>
+      </div>
+    </div></section>
+
+    <section id="process"><div class="container">
+      <div class="section-head"><span class="eyebrow">How it works</span><h2>Three simple steps to get started.</h2><p>We make it straightforward to explain the problem and find out what service is right for you.</p></div>
+      <div class="process-grid">
+        <div class="step"><div class="step-num">STEP 01 — TELL US</div><h3>Describe the problem</h3><p>Share the type of pest, your location and whether the property is residential or commercial.</p></div>
+        <div class="step"><div class="step-num">STEP 02 — GET A PLAN</div><h3>Discuss your options</h3><p>We’ll discuss the next steps, estimated cost and any preparation needed for the service.</p></div>
+        <div class="step"><div class="step-num">STEP 03 — PROTECT</div><h3>Arrange your service</h3><p>Confirm a suitable time and follow all safety instructions provided for your treatment.</p></div>
+      </div>
+    </div></section>
+
+    <div class="cta"><div class="container"><div class="cta-panel"><div><h2>Ready to make pests a thing of the past?</h2><p>Tell us what you’re dealing with and request a no-obligation quote.</p></div><a class="btn" href="#contact">Get your free quote ↗</a></div></div></div>
+
+    <section class="contact" id="contact"><div class="container">
+      <div class="section-head"><span class="eyebrow">Contact us</span><h2>Let’s talk about your pest problem.</h2><p>Fill out the form and it will open a WhatsApp message with your details ready to send.</p></div>
+      <div class="contact-grid">
+        <div class="contact-copy"><h3>Get in touch</h3><p>For a faster response, message us on WhatsApp. Replace the sample contact details with your real business information before publishing.</p>
+          <div class="contact-detail"><div class="service-icon">📍</div><div><strong>Service area</strong><small>Port Harcourt and nearby areas</small></div></div>
+          <div class="contact-detail"><div class="service-icon">📞</div><div><strong>Phone / WhatsApp</strong><small>+234 803 866 4094 </small></div></div>
+          <div class="contact-detail"><div class="service-icon">🕒</div><div><strong>Working hours</strong><small>Monday – Saturday · By appointment</small></div></div>
+        </div>
+        <form id="quoteForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" placeholder="Full name" required></div>
+            <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" placeholder="+234..." required></div>
+            <div class="field"><label for="service">Service needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Home fumigation</option><option>Cockroach or ant control</option><option>Mosquito control</option><option>Termite treatment</option><option>Office / commercial pest control</option><option>Pest inspection</option><option>Other</option></select></div>
+            <div class="field"><label for="property">Property type</label><select id="property" name="property"><option>Residential</option><option>Office / commercial</option><option>Shop / warehouse</option><option>Other</option></select></div>
+            <div class="field full"><label for="location">Your location *</label><input id="location" name="location" placeholder="Area / town" required></div>
+            <div class="field full"><label for="message">Tell us a little more</label><textarea id="message" name="message" placeholder="Which pests have you noticed?"></textarea></div>
+          </div>
+          <button class="btn btn-dark" type="submit">Send quote request on WhatsApp ↗</button>
+          <p class="form-note">This form opens WhatsApp; it does not store your information on this website.</p>
+        </form>
+      </div>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-row">
+    <a class="brand" href="#home"><span class="brand-mark">✳</span><span>ShieldGuard<small>Fumigation & Pest Control</small></span></a>
+    <div class="footer-links"><a href="#services">Services</a><a href="#about">Why us</a><a href="#contact">Contact</a></div>
+    <div class="copyright">© <span id="year"></span> ShieldGuard Fumigation. All rights reserved.</div>
+  </div></footer>
+  <a class="whatsapp" id="whatsappLink" href="https://wa.me/2348038664094" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">☏</a>
+
+  <script>
+    // IMPORTANT: Replace this sample number with your WhatsApp number in international format.
+    // For Nigeria, use 234 followed by your number without the first 0, e.g. 2348012345678.
+    const WHATSAPP_NUMBER = "2348000000000";
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.textContent = open ? "✕" : "☰";
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("whatsappLink").href = `https://wa.me/${WHATSAPP_NUMBER}`;
+    document.getElementById("quoteForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const message = [
+        "Hello ShieldGuard Fumigation, I would like to request a quote.",
+        `Name: ${data.get("name")}`,
+        `Phone: ${data.get("phone")}`,
+        `Service: ${data.get("service")}`,
+        `Property type: ${data.get("property")}`,
+        `Location: ${data.get("location")}`,
+        `Details: ${data.get("message") || "Not provided"}`
+      ].join("\n");
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
